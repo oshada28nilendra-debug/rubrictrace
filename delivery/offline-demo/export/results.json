@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "title": "Fictional formative systems exercise",
+  "pack_digest": "a7a7e504cd09552e710aa18442f89fe825b5c6a12fb7f7816ae93bc944730ee0",
+  "review_digest": "b727ca3b0033c2ba6e366fc005ec92674df3d050122494cbf3d55042b8dd37e0",
+  "reviewer": "SCRIPTED-fixture-marker",
+  "results": [
+    {
+      "submission_id": "S001",
+      "status": "reviewed",
+      "points": 5,
+      "maximum": 5,
+      "percentage": "100.00",
+      "criteria": [
+        {
+          "criterion_id": "cause",
+          "action": "accept",
+          "level": "clear",
+          "points": 2,
+          "feedback": "The retry cause and duplicate-handling strategy are explained."
+        },
+        {
+          "criterion_id": "mitigation",
+          "action": "accept",
+          "level": "clear",
+          "points": 3,
+          "feedback": "The retry cause and duplicate-handling strategy are explained."
+        }
+      ]
+    },
+    {
+      "submission_id": "S002",
+      "status": "reviewed",
+      "points": 1,
+      "maximum": 5,
+      "percentage": "20.00",
+      "criteria": [
+        {
+          "criterion_id": "cause",
+          "action": "override",
+          "level": "partial",
+          "points": 1,
+          "feedback": "Explain the lost acknowledgement and a suitable mitigation."
+        },
+        {
+          "criterion_id": "mitigation",
+          "action": "override",
+          "level": "missing",
+          "points": 0,
+          "feedback": "Explain the lost acknowledgement and a suitable mitigation."
+        }
+      ]
+    }
+  ],
+  "moderation": {
+    "accepted": 2,
+    "overridden": 2,
+    "withheld": 0,
+    "criteria": {
+      "cause": {
+        "accepted": 1,
+        "overridden": 1,
+        "withheld": 0,
+        "model_suggested": 2,
+        "overrode_suggestion": 1,
+        "override_rate": "0.500"
+      },
+      "mitigation": {
+        "accepted": 1,
+        "overridden": 1,
+        "withheld": 0,
+        "model_suggested": 2,
+        "overrode_suggestion": 1,
+        "override_rate": "0.500"
+      }
+    }
+  }
+}

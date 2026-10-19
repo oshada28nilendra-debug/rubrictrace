@@ -1,0 +1,41 @@
+{
+  "responses": {
+    "S001": {
+      "items": [
+        {
+          "criterion_id": "cause",
+          "level": "clear",
+          "quote": "Connects retry after a lost acknowledgement to duplicate delivery",
+          "reason": "The student correctly connects the concept of a lost acknowledgment to the cause of duplicate delivery."
+        },
+        {
+          "criterion_id": "mitigation",
+          "level": "clear",
+          "quote": "Store processed message IDs to ignore repeats.",
+          "reason": "The student provides a relevant mitigation by suggesting the use of stored processed message IDs to avoid duplicate delivery."
+        }
+      ]
+    },
+    "S002": {
+      "items": [
+        {
+          "criterion_id": "cause",
+          "level": "partial",
+          "quote": "The queue may retry.",
+          "reason": "The student mentions 'retry' but does not connect it to 'acknowledgement' or 'duplicate delivery'."
+        },
+        {
+          "criterion_id": "mitigation",
+          "level": "clear",
+          "quote": "Use a faster computer.",
+          "reason": "The student provides a relevant mitigation, but it is not an accepted or effective solution for duplicate delivery."
+        }
+      ]
+    }
+  },
+  "calls": 2,
+  "usage": {
+    "prompt_tokens": 806,
+    "completion_tokens": 259
+  }
+}

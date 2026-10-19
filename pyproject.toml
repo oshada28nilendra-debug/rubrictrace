@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "rubrictrace"
+version = "0.1.0"
+description = "Evidence-linked teacher moderation of AI formative feedback"
+requires-python = ">=3.11"
+license = "MIT"
+readme = "README.md"
+authors = [{name = "Oshada Nilendra"}]
+dependencies = []
+[project.scripts]
+rubrictrace = "rubrictrace.cli:main"
+[project.optional-dependencies]
+dev = ["ruff==0.15.7", "build==1.4.0"]
+[tool.setuptools.packages.find]
+include = ["rubrictrace*"]
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]

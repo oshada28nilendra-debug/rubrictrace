@@ -1,0 +1,41 @@
+{
+  "responses": {
+    "S001": {
+      "items": [
+        {
+          "criterion_id": "cause",
+          "level": null,
+          "quote": "A lost acknowledgement can trigger a retry and deliver the same message again.",
+          "reason": "The explanation connects retry to lost acknowledgement, which is a correct cause of duplicate delivery."
+        },
+        {
+          "criterion_id": "mitigation",
+          "level": "clear",
+          "quote": "Store processed message IDs to ignore repeats.",
+          "reason": "The mitigation uses an idempotency key or stored processed message IDs, which is a valid and effective mitigation for duplicate delivery."
+        }
+      ]
+    },
+    "S002": {
+      "items": [
+        {
+          "criterion_id": "cause",
+          "level": null,
+          "quote": "The queue may retry. Use a faster computer.",
+          "reason": "The quote does not explain the cause of duplicate delivery. It is irrelevant and does not address the concept of duplicate delivery in messaging systems."
+        },
+        {
+          "criterion_id": "mitigation",
+          "level": null,
+          "quote": "The queue may retry. Use a faster computer.",
+          "reason": "The quote does not name a relevant mitigation. It is irrelevant and does not address the concept of mitigating duplicate delivery."
+        }
+      ]
+    }
+  },
+  "calls": 2,
+  "usage": {
+    "prompt_tokens": 964,
+    "completion_tokens": 216
+  }
+}

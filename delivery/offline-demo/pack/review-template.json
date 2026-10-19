@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "pack_digest": "a7a7e504cd09552e710aa18442f89fe825b5c6a12fb7f7816ae93bc944730ee0",
+  "reviewer": "",
+  "confirmed": false,
+  "decisions": [
+    {
+      "submission_id": "S001",
+      "criterion_id": "cause",
+      "action": "pending",
+      "level": "clear",
+      "feedback": "",
+      "note": ""
+    },
+    {
+      "submission_id": "S001",
+      "criterion_id": "mitigation",
+      "action": "pending",
+      "level": "clear",
+      "feedback": "",
+      "note": ""
+    },
+    {
+      "submission_id": "S002",
+      "criterion_id": "cause",
+      "action": "pending",
+      "level": "clear",
+      "feedback": "",
+      "note": ""
+    },
+    {
+      "submission_id": "S002",
+      "criterion_id": "mitigation",
+      "action": "pending",
+      "level": "clear",
+      "feedback": "",
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "pack_digest": "a7a7e504cd09552e710aa18442f89fe825b5c6a12fb7f7816ae93bc944730ee0",
+  "reviewer": "SCRIPTED-fixture-marker",
+  "confirmed": true,
+  "decisions": [
+    {
+      "submission_id": "S001",
+      "criterion_id": "cause",
+      "action": "accept",
+      "level": "clear",
+      "feedback": "The retry cause and duplicate-handling strategy are explained.",
+      "note": ""
+    },
+    {
+      "submission_id": "S001",
+      "criterion_id": "mitigation",
+      "action": "accept",
+      "level": "clear",
+      "feedback": "The retry cause and duplicate-handling strategy are explained.",
+      "note": ""
+    },
+    {
+      "submission_id": "S002",
+      "criterion_id": "cause",
+      "action": "override",
+      "level": "partial",
+      "feedback": "Explain the lost acknowledgement and a suitable mitigation.",
+      "note": "Scripted fixture judgement; not an actual teacher."
+    },
+    {
+      "submission_id": "S002",
+      "criterion_id": "mitigation",
+      "action": "override",
+      "level": "missing",
+      "feedback": "Explain the lost acknowledgement and a suitable mitigation.",
+      "note": "Scripted fixture judgement; not an actual teacher."
+    }
+  ]
+}

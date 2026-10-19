@@ -1,0 +1,114 @@
+{
+  "schema": 1,
+  "mode": "fixture",
+  "assessment": {
+    "schema": 1,
+    "title": "Fictional formative systems exercise",
+    "prompt": "Explain why a queue consumer should handle duplicate delivery and name one mitigation.",
+    "rubric": [
+      {
+        "id": "cause",
+        "description": "Explain the duplicate-delivery cause",
+        "levels": [
+          {
+            "id": "missing",
+            "points": 0,
+            "description": "No relevant cause or an incorrect claim"
+          },
+          {
+            "id": "partial",
+            "points": 1,
+            "description": "Mentions retry without connecting it to acknowledgement"
+          },
+          {
+            "id": "clear",
+            "points": 2,
+            "description": "Connects retry after a lost acknowledgement to duplicate delivery"
+          }
+        ]
+      },
+      {
+        "id": "mitigation",
+        "description": "Name a relevant mitigation",
+        "levels": [
+          {
+            "id": "missing",
+            "points": 0,
+            "description": "No relevant mitigation"
+          },
+          {
+            "id": "clear",
+            "points": 3,
+            "description": "Uses an idempotency key or stored processed message IDs"
+          }
+        ]
+      }
+    ],
+    "submissions": [
+      {
+        "id": "S001",
+        "text": "A lost acknowledgement can trigger a retry and deliver the same message again. Store processed message IDs to ignore repeats."
+      },
+      {
+        "id": "S002",
+        "text": "The queue may retry. Use a faster computer."
+      }
+    ]
+  },
+  "assessment_digest": "ac22174d53c443c349502bcc4833d0ce31446a5bd5ca03cf13a736ac708a6433",
+  "suggestions": [
+    {
+      "submission_id": "S001",
+      "criterion_id": "cause",
+      "status": "suggested",
+      "level": "clear",
+      "quote": "A lost acknowledgement can trigger a retry and deliver the same message again. Store processed message IDs to ignore repeats.",
+      "span": {
+        "start": 0,
+        "end": 125
+      },
+      "reason": "DELIBERATELY GENEROUS SCRIPTED FIXTURE. Teacher review may disagree.",
+      "answer_digest": "1a1af41efd6e9e9bfd9841f46a10c3dd49527f96f447fcb202efa3fd5c773fff"
+    },
+    {
+      "submission_id": "S001",
+      "criterion_id": "mitigation",
+      "status": "suggested",
+      "level": "clear",
+      "quote": "A lost acknowledgement can trigger a retry and deliver the same message again. Store processed message IDs to ignore repeats.",
+      "span": {
+        "start": 0,
+        "end": 125
+      },
+      "reason": "DELIBERATELY GENEROUS SCRIPTED FIXTURE. Teacher review may disagree.",
+      "answer_digest": "1a1af41efd6e9e9bfd9841f46a10c3dd49527f96f447fcb202efa3fd5c773fff"
+    },
+    {
+      "submission_id": "S002",
+      "criterion_id": "cause",
+      "status": "suggested",
+      "level": "clear",
+      "quote": "The queue may retry. Use a faster computer.",
+      "span": {
+        "start": 0,
+        "end": 43
+      },
+      "reason": "DELIBERATELY GENEROUS SCRIPTED FIXTURE. Teacher review may disagree.",
+      "answer_digest": "37d46606e977e14642b84a967cc63a8e4881457308fc2212ca67fb3a37e31c02"
+    },
+    {
+      "submission_id": "S002",
+      "criterion_id": "mitigation",
+      "status": "suggested",
+      "level": "clear",
+      "quote": "The queue may retry. Use a faster computer.",
+      "span": {
+        "start": 0,
+        "end": 43
+      },
+      "reason": "DELIBERATELY GENEROUS SCRIPTED FIXTURE. Teacher review may disagree.",
+      "answer_digest": "37d46606e977e14642b84a967cc63a8e4881457308fc2212ca67fb3a37e31c02"
+    }
+  ],
+  "digest": "a7a7e504cd09552e710aa18442f89fe825b5c6a12fb7f7816ae93bc944730ee0"
+}
