@@ -7,6 +7,11 @@ formative answers. It separates model suggestions, exact evidence and teacher
 decisions, then calculates scores deterministically. Python 3.11+, no runtime
 package dependencies.
 
+**Bounded release verified; [PR #1](https://github.com/oshada28nilendra-debug/rubrictrace/pull/1)
+is open for your review.** 47 tests per Python 3.11/3.12/3.13, real local-model
+inference, browser rendering and secret scanning passed. See exact revisions and
+limitations in [verification](docs/VERIFICATION.md).
+
 ## Contents
 
 - [Workflow](#workflow)
@@ -122,6 +127,12 @@ verification or proof that someone read the work. Anyone who changes all files a
 recomputes their hashes can forge an audit. Use a trusted private directory.
 
 ## Input and scoring
+
+The real adapter supplies numbered contiguous answer passages. The model selects
+an `evidence_id`; code resolves it into exact text and verifies its source offset.
+Unknown passage IDs abstain. Imported fixtures can still use literal `quote`
+fields with exact-match checks. Passage splitting is a bounded punctuation/chunk
+heuristic, not a linguistic model; repeated text resolves to its first exact match.
 
 See `fixtures/assessment.json` for the complete schema. Version `schema: 1` takes
 a title, prompt, rubric and submissions. Each criterion has an opaque ID,

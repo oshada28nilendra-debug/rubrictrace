@@ -1,0 +1,64 @@
+running egg_info
+writing rubrictrace.egg-info/PKG-INFO
+writing dependency_links to rubrictrace.egg-info/dependency_links.txt
+writing entry points to rubrictrace.egg-info/entry_points.txt
+writing requirements to rubrictrace.egg-info/requires.txt
+writing top-level names to rubrictrace.egg-info/top_level.txt
+reading manifest file 'rubrictrace.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'rubrictrace.egg-info/SOURCES.txt'
+running bdist_wheel
+running build
+running build_py
+copying rubrictrace/core.py -> build/lib/rubrictrace
+copying rubrictrace/provider.py -> build/lib/rubrictrace
+running egg_info
+writing rubrictrace.egg-info/PKG-INFO
+writing dependency_links to rubrictrace.egg-info/dependency_links.txt
+writing entry points to rubrictrace.egg-info/entry_points.txt
+writing requirements to rubrictrace.egg-info/requires.txt
+writing top-level names to rubrictrace.egg-info/top_level.txt
+reading manifest file 'rubrictrace.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file 'rubrictrace.egg-info/SOURCES.txt'
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+creating build/bdist.linux-x86_64/wheel
+creating build/bdist.linux-x86_64/wheel/rubrictrace
+copying build/lib/rubrictrace/__main__.py -> build/bdist.linux-x86_64/wheel/./rubrictrace
+copying build/lib/rubrictrace/review.py -> build/bdist.linux-x86_64/wheel/./rubrictrace
+copying build/lib/rubrictrace/core.py -> build/bdist.linux-x86_64/wheel/./rubrictrace
+copying build/lib/rubrictrace/files.py -> build/bdist.linux-x86_64/wheel/./rubrictrace
+copying build/lib/rubrictrace/cli.py -> build/bdist.linux-x86_64/wheel/./rubrictrace
+copying build/lib/rubrictrace/report.py -> build/bdist.linux-x86_64/wheel/./rubrictrace
+copying build/lib/rubrictrace/httpio.py -> build/bdist.linux-x86_64/wheel/./rubrictrace
+copying build/lib/rubrictrace/__init__.py -> build/bdist.linux-x86_64/wheel/./rubrictrace
+copying build/lib/rubrictrace/provider.py -> build/bdist.linux-x86_64/wheel/./rubrictrace
+running install_egg_info
+Copying rubrictrace.egg-info to build/bdist.linux-x86_64/wheel/./rubrictrace-0.1.0-py3.12.egg-info
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/rubrictrace-0.1.0.dist-info/WHEEL
+creating '/workspace/scratch/1e12a4453378/rubrictrace/dist/.tmp-qvpttjlu/rubrictrace-0.1.0-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'rubrictrace/__init__.py'
+adding 'rubrictrace/__main__.py'
+adding 'rubrictrace/cli.py'
+adding 'rubrictrace/core.py'
+adding 'rubrictrace/files.py'
+adding 'rubrictrace/httpio.py'
+adding 'rubrictrace/provider.py'
+adding 'rubrictrace/report.py'
+adding 'rubrictrace/review.py'
+adding 'rubrictrace-0.1.0.dist-info/licenses/LICENSE'
+adding 'rubrictrace-0.1.0.dist-info/METADATA'
+adding 'rubrictrace-0.1.0.dist-info/WHEEL'
+adding 'rubrictrace-0.1.0.dist-info/entry_points.txt'
+adding 'rubrictrace-0.1.0.dist-info/top_level.txt'
+adding 'rubrictrace-0.1.0.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+Successfully built rubrictrace-0.1.0-py3-none-any.whl
+* Creating isolated environment: venv+pip...
+* Installing packages in isolated environment:
+  - setuptools>=77
+* Getting build dependencies for wheel...
+* Building wheel...

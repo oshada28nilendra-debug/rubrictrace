@@ -1,0 +1,11 @@
+usage: rubrictrace [-h] {prepare,export} ...
+
+Teacher-moderated formative feedback; never automatic final grades.
+
+positional arguments:
+  {prepare,export}
+    prepare         Private review pack; no final marks
+    export          Recheck original input, teacher decisions and scores
+
+options:
+  -h, --help        show this help message and exit

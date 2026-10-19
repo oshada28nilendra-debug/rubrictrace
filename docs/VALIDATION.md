@@ -33,5 +33,6 @@ Inventory inspected: prior software-debugging, evidence-audit, data profiling an
 CSV-cleaning releases do not implement this educational moderation workflow.
 Reuse: bounded HTTP transport and optional downloader adapted from Oshada Nilendra's
 MIT DataRescue, copyright retained in LICENSE. Python runtime dependencies: none.
-Optional llama.cpp MIT; official Qwen3-1.7B GGUF Apache-2.0:
-https://huggingface.co/Qwen/Qwen3-1.7B-GGUF . No weights or student dataset bundled.
+Optional llama.cpp MIT; official Qwen3-4B GGUF Apache-2.0:
+https://huggingface.co/Qwen/Qwen3-4B-GGUF . Earlier 1.7B trials are retained as
+failed provenance. No weights or student dataset bundled.

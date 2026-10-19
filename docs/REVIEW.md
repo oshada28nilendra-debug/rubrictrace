@@ -20,3 +20,9 @@ The reviewer found no other material issue within reviewed boundaries. This was
 not a penetration test, teacher study, real-model review, browser test or spreadsheet
 application compatibility test. Documented DNS and trusted-directory limitations
 remain. No deferred material finding; no claim of complete security.
+
+Post-review evidence-selection improvement: replaced unconstrained quotation
+generation in the model prompt with finite answer-passage IDs. Valid/unknown IDs
+and Unicode/repeated passage tests were run red then green; literal quote fixtures
+and pack integrity remain checked. Single-author implementation review of this
+small follow-up complements the earlier independent whole-branch review.

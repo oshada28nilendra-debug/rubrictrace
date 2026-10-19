@@ -1,0 +1,64 @@
+{
+  "status": "passed",
+  "runtime": "llama.cpp b11718",
+  "model": "Qwen3-4B Q4_K_M",
+  "runtime_archive_sha256": "99f83b15cea9a4fb8945516c276b5f42b11608f82104fc6fa98a541cac826de7",
+  "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+  "executable_sha256": "83a4d763c03e453f13d2f702442bfdd99fb53a9cb2b14a244d4881f52e33cea1",
+  "command": [
+    "/home/runner/work/rubrictrace/model-cache/llama-b11718/llama-server",
+    "-m",
+    "/home/runner/work/rubrictrace/model-cache/model.gguf",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "18082",
+    "-c",
+    "4096",
+    "-np",
+    "1",
+    "-t",
+    "4",
+    "-ngl",
+    "0",
+    "--no-webui"
+  ],
+  "fixture": "Authored fictional short answers; not a classroom benchmark",
+  "review": "SCRIPTED fixture decisions; not an actual teacher review",
+  "paid_api_calls": 0,
+  "calls": 2,
+  "usage": {
+    "prompt_tokens": 922,
+    "completion_tokens": 171
+  },
+  "suggested": 4,
+  "blocked": 0,
+  "scores": [
+    5,
+    1
+  ],
+  "moderation": {
+    "accepted": 4,
+    "overridden": 0,
+    "withheld": 0,
+    "criteria": {
+      "cause": {
+        "accepted": 2,
+        "overridden": 0,
+        "withheld": 0,
+        "model_suggested": 2,
+        "overrode_suggestion": 0,
+        "override_rate": "0.000"
+      },
+      "mitigation": {
+        "accepted": 2,
+        "overridden": 0,
+        "withheld": 0,
+        "model_suggested": 2,
+        "overrode_suggestion": 0,
+        "override_rate": "0.000"
+      }
+    }
+  },
+  "pack_digest": "e54361feed02ea6ae1a4a44d229f3ba7b66b656177d24b0c81a28a6bc4e05488"
+}

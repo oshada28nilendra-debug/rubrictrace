@@ -1,0 +1,61 @@
+{
+  "repository": "https://github.com/oshada28nilendra-debug/rubrictrace",
+  "branch": "feat/rubrictrace-first-release",
+  "pull_request": "https://github.com/oshada28nilendra-debug/rubrictrace/pull/1",
+  "tested_implementation_commit": "f79da0840320e822c153778c5816ccafe2b4f5d6",
+  "status": "verified_release_pr_open",
+  "completed": true,
+  "merged": false,
+  "tests_per_python": 47,
+  "python_versions": [
+    "3.11",
+    "3.12",
+    "3.13"
+  ],
+  "skips": 0,
+  "decoded_job_logs_inspected": true,
+  "ci_run": "https://github.com/oshada28nilendra-debug/rubrictrace/actions/runs/39238361546",
+  "real_model_run": "https://github.com/oshada28nilendra-debug/rubrictrace/actions/runs/39238361771",
+  "live_model": {
+    "runtime": "llama.cpp b11718",
+    "model": "Qwen3-4B Q4_K_M",
+    "calls": 2,
+    "prompt_tokens": 922,
+    "completion_tokens": 171,
+    "valid_suggestions": 4,
+    "blocked": 0,
+    "scores": [
+      5,
+      1
+    ],
+    "fixture": "Authored fictional answers; SCRIPTED moderation, not actual teacher review",
+    "artifact_id": 12180166587,
+    "artifact_sha256": "0e110ae90b2608883bc8a6dc21eb8d8e00ddefcf637ac75be54b0dfe10d8b17d",
+    "downloaded_hash_checked_recomputed": true,
+    "retained_in": "delivery/github-live-model"
+  },
+  "browser": {
+    "browser": "Chromium149.0.7827.55",
+    "result": "passed",
+    "artifact_id": 12179379506,
+    "artifact_sha256": "6c1468ba7376ab3d2c135edc2bc169b3d784f364d379288bea01b6fa24e0095e",
+    "retained_in": "delivery/github-browser",
+    "checks": [
+      "two submissions rendered",
+      "source-first headings",
+      "no active content",
+      "mobile no horizontal overflow",
+      "expected final scores",
+      "no page errors",
+      "no HTTP requests"
+    ]
+  },
+  "security_checks": {"scanner": "gitleaks", "version": "8.30.1", "result": "passed"},
+  "paid_model_api_calls": 0,
+  "limits": [
+    "One authored fixture, no general grading accuracy or production security claim",
+    "Review/confirmation in tests is scripted",
+    "Remote paid model integration not live tested",
+    "User merge remains separate"
+  ]
+}

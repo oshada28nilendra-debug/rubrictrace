@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "title": "Fictional formative systems exercise",
+  "pack_digest": "e54361feed02ea6ae1a4a44d229f3ba7b66b656177d24b0c81a28a6bc4e05488",
+  "review_digest": "9cff2caf9ac76418f41b0b764e0a9cf66bc94c41e7e4b0795e9578f0fdc6ce49",
+  "reviewer": "SCRIPTED-fixture-reviewer",
+  "results": [
+    {
+      "submission_id": "S001",
+      "status": "reviewed",
+      "points": 5,
+      "maximum": 5,
+      "percentage": "100.00",
+      "criteria": [
+        {
+          "criterion_id": "cause",
+          "action": "accept",
+          "level": "clear",
+          "points": 2,
+          "feedback": "Compare your answer with the stated rubric descriptors."
+        },
+        {
+          "criterion_id": "mitigation",
+          "action": "accept",
+          "level": "clear",
+          "points": 3,
+          "feedback": "Compare your answer with the stated rubric descriptors."
+        }
+      ]
+    },
+    {
+      "submission_id": "S002",
+      "status": "reviewed",
+      "points": 1,
+      "maximum": 5,
+      "percentage": "20.00",
+      "criteria": [
+        {
+          "criterion_id": "cause",
+          "action": "accept",
+          "level": "partial",
+          "points": 1,
+          "feedback": "Compare your answer with the stated rubric descriptors."
+        },
+        {
+          "criterion_id": "mitigation",
+          "action": "accept",
+          "level": "missing",
+          "points": 0,
+          "feedback": "Compare your answer with the stated rubric descriptors."
+        }
+      ]
+    }
+  ],
+  "moderation": {
+    "accepted": 4,
+    "overridden": 0,
+    "withheld": 0,
+    "criteria": {
+      "cause": {
+        "accepted": 2,
+        "overridden": 0,
+        "withheld": 0,
+        "model_suggested": 2,
+        "overrode_suggestion": 0,
+        "override_rate": "0.000"
+      },
+      "mitigation": {
+        "accepted": 2,
+        "overridden": 0,
+        "withheld": 0,
+        "model_suggested": 2,
+        "overrode_suggestion": 0,
+        "override_rate": "0.000"
+      }
+    }
+  }
+}

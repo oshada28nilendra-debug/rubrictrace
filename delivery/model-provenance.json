@@ -1,0 +1,8 @@
+{
+  "runtime_url": "https://github.com/ggml-org/llama.cpp/releases/download/b11718/llama-b11718-bin-ubuntu-x64.tar.gz",
+  "runtime_sha256": "99f83b15cea9a4fb8945516c276b5f42b11608f82104fc6fa98a541cac826de7",
+  "model_url": "https://huggingface.co/Qwen/Qwen3-4B-GGUF/resolve/bc640142c66e1fdd12af0bd68f40445458f3869b/Qwen3-4B-Q4_K_M.gguf",
+  "model_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+  "model": "Qwen3-4B Q4_K_M",
+  "runtime": "llama.cpp b11718"
+}

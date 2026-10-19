@@ -6,6 +6,12 @@ Workflow: finite rubric + pseudonymous answers → optional single-model proposa
 → explicit accept/override/withhold → deterministic scores and moderation audit.
 Human review is required, never inferred from model approval or a hash.
 
+Final evidence selection: the model chooses from finite answer-passage IDs; the
+engine resolves exact source quotations. Legacy literal-quote fixtures remain
+accepted only after exact matching. Same source/offset/hash gates and unchanged
+strong-answer smoke requirement. This narrows model generation after observed
+rubric-copying failures; it does not make quotations proof of marking correctness.
+
 Python 3.11+, stdlib only. Modules separate input/schema/evidence, HTTP/model,
 review/score arithmetic and output escaping. Bounds: JSON inputs and generated
 packs <=2 MB; answers <=8,000 characters; 1–8 criteria; 2–6 levels, integer points
