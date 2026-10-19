@@ -1,0 +1,234 @@
+{
+  "schema": 1,
+  "title": "Fictional formative systems exercise",
+  "pack_digest": "e54361feed02ea6ae1a4a44d229f3ba7b66b656177d24b0c81a28a6bc4e05488",
+  "review_digest": "9cff2caf9ac76418f41b0b764e0a9cf66bc94c41e7e4b0795e9578f0fdc6ce49",
+  "reviewer": "SCRIPTED-fixture-reviewer",
+  "results": [
+    {
+      "submission_id": "S001",
+      "status": "reviewed",
+      "points": 5,
+      "maximum": 5,
+      "percentage": "100.00",
+      "criteria": [
+        {
+          "criterion_id": "cause",
+          "action": "accept",
+          "level": "clear",
+          "points": 2,
+          "feedback": "Compare your answer with the stated rubric descriptors."
+        },
+        {
+          "criterion_id": "mitigation",
+          "action": "accept",
+          "level": "clear",
+          "points": 3,
+          "feedback": "Compare your answer with the stated rubric descriptors."
+        }
+      ]
+    },
+    {
+      "submission_id": "S002",
+      "status": "reviewed",
+      "points": 1,
+      "maximum": 5,
+      "percentage": "20.00",
+      "criteria": [
+        {
+          "criterion_id": "cause",
+          "action": "accept",
+          "level": "partial",
+          "points": 1,
+          "feedback": "Compare your answer with the stated rubric descriptors."
+        },
+        {
+          "criterion_id": "mitigation",
+          "action": "accept",
+          "level": "missing",
+          "points": 0,
+          "feedback": "Compare your answer with the stated rubric descriptors."
+        }
+      ]
+    }
+  ],
+  "moderation": {
+    "accepted": 4,
+    "overridden": 0,
+    "withheld": 0,
+    "criteria": {
+      "cause": {
+        "accepted": 2,
+        "overridden": 0,
+        "withheld": 0,
+        "model_suggested": 2,
+        "overrode_suggestion": 0,
+        "override_rate": "0.000"
+      },
+      "mitigation": {
+        "accepted": 2,
+        "overridden": 0,
+        "withheld": 0,
+        "model_suggested": 2,
+        "overrode_suggestion": 0,
+        "override_rate": "0.000"
+      }
+    }
+  },
+  "audit": {
+    "pack": {
+      "schema": 1,
+      "mode": "live_model",
+      "assessment": {
+        "schema": 1,
+        "title": "Fictional formative systems exercise",
+        "prompt": "Explain why a queue consumer should handle duplicate delivery and name one mitigation.",
+        "rubric": [
+          {
+            "id": "cause",
+            "description": "Explain the duplicate-delivery cause",
+            "levels": [
+              {
+                "id": "missing",
+                "points": 0,
+                "description": "No relevant cause or an incorrect claim"
+              },
+              {
+                "id": "partial",
+                "points": 1,
+                "description": "Mentions retry without connecting it to acknowledgement"
+              },
+              {
+                "id": "clear",
+                "points": 2,
+                "description": "Connects retry after a lost acknowledgement to duplicate delivery"
+              }
+            ]
+          },
+          {
+            "id": "mitigation",
+            "description": "Name a relevant mitigation",
+            "levels": [
+              {
+                "id": "missing",
+                "points": 0,
+                "description": "No relevant mitigation"
+              },
+              {
+                "id": "clear",
+                "points": 3,
+                "description": "Uses an idempotency key or stored processed message IDs"
+              }
+            ]
+          }
+        ],
+        "submissions": [
+          {
+            "id": "S001",
+            "text": "A lost acknowledgement can trigger a retry and deliver the same message again. Store processed message IDs to ignore repeats."
+          },
+          {
+            "id": "S002",
+            "text": "The queue may retry. Use a faster computer."
+          }
+        ]
+      },
+      "assessment_digest": "ac22174d53c443c349502bcc4833d0ce31446a5bd5ca03cf13a736ac708a6433",
+      "suggestions": [
+        {
+          "submission_id": "S001",
+          "criterion_id": "cause",
+          "status": "suggested",
+          "level": "clear",
+          "quote": "A lost acknowledgement can trigger a retry and deliver the same message again.",
+          "span": {
+            "start": 0,
+            "end": 78
+          },
+          "reason": "The response correctly connects retry after a lost acknowledgement to duplicate delivery.",
+          "answer_digest": "1a1af41efd6e9e9bfd9841f46a10c3dd49527f96f447fcb202efa3fd5c773fff"
+        },
+        {
+          "submission_id": "S001",
+          "criterion_id": "mitigation",
+          "status": "suggested",
+          "level": "clear",
+          "quote": "Store processed message IDs to ignore repeats.",
+          "span": {
+            "start": 79,
+            "end": 125
+          },
+          "reason": "The response provides a relevant mitigation by suggesting to store processed message IDs to ignore repeats.",
+          "answer_digest": "1a1af41efd6e9e9bfd9841f46a10c3dd49527f96f447fcb202efa3fd5c773fff"
+        },
+        {
+          "submission_id": "S002",
+          "criterion_id": "cause",
+          "status": "suggested",
+          "level": "partial",
+          "quote": "The queue may retry.",
+          "span": {
+            "start": 0,
+            "end": 20
+          },
+          "reason": "The response mentions retry without connecting it to acknowledgement, which is a partial explanation of the duplicate-delivery cause.",
+          "answer_digest": "37d46606e977e14642b84a967cc63a8e4881457308fc2212ca67fb3a37e31c02"
+        },
+        {
+          "submission_id": "S002",
+          "criterion_id": "mitigation",
+          "status": "suggested",
+          "level": "missing",
+          "quote": "Use a faster computer.",
+          "span": {
+            "start": 21,
+            "end": 43
+          },
+          "reason": "The response suggests using a faster computer, which is not a relevant mitigation for handling duplicate delivery.",
+          "answer_digest": "37d46606e977e14642b84a967cc63a8e4881457308fc2212ca67fb3a37e31c02"
+        }
+      ],
+      "digest": "e54361feed02ea6ae1a4a44d229f3ba7b66b656177d24b0c81a28a6bc4e05488"
+    },
+    "review": {
+      "schema": 1,
+      "pack_digest": "e54361feed02ea6ae1a4a44d229f3ba7b66b656177d24b0c81a28a6bc4e05488",
+      "reviewer": "SCRIPTED-fixture-reviewer",
+      "confirmed": true,
+      "decisions": [
+        {
+          "submission_id": "S001",
+          "criterion_id": "cause",
+          "action": "accept",
+          "level": "clear",
+          "feedback": "Compare your answer with the stated rubric descriptors.",
+          "note": "Scripted known-fixture decision; not actual teacher judgement."
+        },
+        {
+          "submission_id": "S001",
+          "criterion_id": "mitigation",
+          "action": "accept",
+          "level": "clear",
+          "feedback": "Compare your answer with the stated rubric descriptors.",
+          "note": "Scripted known-fixture decision; not actual teacher judgement."
+        },
+        {
+          "submission_id": "S002",
+          "criterion_id": "cause",
+          "action": "accept",
+          "level": "partial",
+          "feedback": "Compare your answer with the stated rubric descriptors.",
+          "note": "Scripted known-fixture decision; not actual teacher judgement."
+        },
+        {
+          "submission_id": "S002",
+          "criterion_id": "mitigation",
+          "action": "accept",
+          "level": "missing",
+          "feedback": "Compare your answer with the stated rubric descriptors.",
+          "note": "Scripted known-fixture decision; not actual teacher judgement."
+        }
+      ]
+    }
+  }
+}

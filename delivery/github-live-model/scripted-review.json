@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "pack_digest": "e54361feed02ea6ae1a4a44d229f3ba7b66b656177d24b0c81a28a6bc4e05488",
+  "reviewer": "SCRIPTED-fixture-reviewer",
+  "confirmed": true,
+  "decisions": [
+    {
+      "submission_id": "S001",
+      "criterion_id": "cause",
+      "action": "accept",
+      "level": "clear",
+      "feedback": "Compare your answer with the stated rubric descriptors.",
+      "note": "Scripted known-fixture decision; not actual teacher judgement."
+    },
+    {
+      "submission_id": "S001",
+      "criterion_id": "mitigation",
+      "action": "accept",
+      "level": "clear",
+      "feedback": "Compare your answer with the stated rubric descriptors.",
+      "note": "Scripted known-fixture decision; not actual teacher judgement."
+    },
+    {
+      "submission_id": "S002",
+      "criterion_id": "cause",
+      "action": "accept",
+      "level": "partial",
+      "feedback": "Compare your answer with the stated rubric descriptors.",
+      "note": "Scripted known-fixture decision; not actual teacher judgement."
+    },
+    {
+      "submission_id": "S002",
+      "criterion_id": "mitigation",
+      "action": "accept",
+      "level": "missing",
+      "feedback": "Compare your answer with the stated rubric descriptors.",
+      "note": "Scripted known-fixture decision; not actual teacher judgement."
+    }
+  ]
+}

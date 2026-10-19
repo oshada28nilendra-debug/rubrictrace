@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "title": "Fictional formative systems exercise",
+  "pack_digest": "a7a7e504cd09552e710aa18442f89fe825b5c6a12fb7f7816ae93bc944730ee0",
+  "review_digest": "40c364a9196688f9a5395e5cf65496edd923dafddd556a628b0e01a705348cd4",
+  "reviewer": "SCRIPTED-installed-fixture",
+  "results": [
+    {
+      "submission_id": "S001",
+      "status": "reviewed",
+      "points": 5,
+      "maximum": 5,
+      "percentage": "100.00",
+      "criteria": [
+        {
+          "criterion_id": "cause",
+          "action": "accept",
+          "level": "clear",
+          "points": 2,
+          "feedback": "Scripted fixture feedback."
+        },
+        {
+          "criterion_id": "mitigation",
+          "action": "accept",
+          "level": "clear",
+          "points": 3,
+          "feedback": "Scripted fixture feedback."
+        }
+      ]
+    },
+    {
+      "submission_id": "S002",
+      "status": "reviewed",
+      "points": 1,
+      "maximum": 5,
+      "percentage": "20.00",
+      "criteria": [
+        {
+          "criterion_id": "cause",
+          "action": "override",
+          "level": "partial",
+          "points": 1,
+          "feedback": "Scripted fixture feedback."
+        },
+        {
+          "criterion_id": "mitigation",
+          "action": "override",
+          "level": "missing",
+          "points": 0,
+          "feedback": "Scripted fixture feedback."
+        }
+      ]
+    }
+  ],
+  "moderation": {
+    "accepted": 2,
+    "overridden": 2,
+    "withheld": 0,
+    "criteria": {
+      "cause": {
+        "accepted": 1,
+        "overridden": 1,
+        "withheld": 0,
+        "model_suggested": 2,
+        "overrode_suggestion": 1,
+        "override_rate": "0.500"
+      },
+      "mitigation": {
+        "accepted": 1,
+        "overridden": 1,
+        "withheld": 0,
+        "model_suggested": 2,
+        "overrode_suggestion": 1,
+        "override_rate": "0.500"
+      }
+    }
+  }
+}

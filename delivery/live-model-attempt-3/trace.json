@@ -1,0 +1,41 @@
+{
+  "responses": {
+    "S001": {
+      "items": [
+        {
+          "criterion_id": "cause",
+          "level": "clear",
+          "quote": "Connects retry after a lost acknowledgement to duplicate delivery",
+          "reason": "The answer correctly explains that a lost acknowledgement can trigger a retry, which connects to duplicate delivery."
+        },
+        {
+          "criterion_id": "mitigation",
+          "level": "clear",
+          "quote": "Store processed message IDs to ignore repeats",
+          "reason": "The answer correctly names a relevant mitigation strategy, storing processed message IDs to ignore repeats."
+        }
+      ]
+    },
+    "S002": {
+      "items": [
+        {
+          "criterion_id": "cause",
+          "level": "partial",
+          "quote": "retry",
+          "reason": "The answer mentions 'retry' but does not connect it to acknowledgement"
+        },
+        {
+          "criterion_id": "mitigation",
+          "level": null,
+          "quote": "",
+          "reason": "The answer does not provide a relevant mitigation strategy"
+        }
+      ]
+    }
+  },
+  "calls": 2,
+  "usage": {
+    "prompt_tokens": 964,
+    "completion_tokens": 160
+  }
+}

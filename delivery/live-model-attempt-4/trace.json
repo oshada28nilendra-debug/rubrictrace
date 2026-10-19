@@ -1,0 +1,41 @@
+{
+  "responses": {
+    "S001": {
+      "items": [
+        {
+          "criterion_id": "cause",
+          "level": "clear",
+          "evidence_id": "a1",
+          "reason": "The response correctly connects retry after a lost acknowledgement to duplicate delivery."
+        },
+        {
+          "criterion_id": "mitigation",
+          "level": "clear",
+          "evidence_id": "a2",
+          "reason": "The response provides a relevant mitigation by suggesting to store processed message IDs to ignore repeats."
+        }
+      ]
+    },
+    "S002": {
+      "items": [
+        {
+          "criterion_id": "cause",
+          "level": "partial",
+          "evidence_id": "a1",
+          "reason": "The response mentions retry without connecting it to acknowledgement, which is a partial explanation of the duplicate-delivery cause."
+        },
+        {
+          "criterion_id": "mitigation",
+          "level": "missing",
+          "evidence_id": "a2",
+          "reason": "The response suggests using a faster computer, which is not a relevant mitigation for handling duplicate delivery."
+        }
+      ]
+    }
+  },
+  "calls": 2,
+  "usage": {
+    "prompt_tokens": 922,
+    "completion_tokens": 171
+  }
+}

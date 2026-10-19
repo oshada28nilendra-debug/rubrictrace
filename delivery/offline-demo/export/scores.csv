@@ -1,0 +1,5 @@
+submission_id,status,points,maximum,percentage,feedback
+S001,reviewed,5,5,100.00,"The retry cause and duplicate-handling strategy are explained.
+The retry cause and duplicate-handling strategy are explained."
+S002,reviewed,1,5,20.00,"Explain the lost acknowledgement and a suitable mitigation.
+Explain the lost acknowledgement and a suitable mitigation."

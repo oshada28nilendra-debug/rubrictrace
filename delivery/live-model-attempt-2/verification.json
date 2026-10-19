@@ -1,0 +1,37 @@
+{
+  "status": "failed",
+  "runtime": "llama.cpp b11718",
+  "model": "Qwen3-1.7B Q8_0",
+  "runtime_archive_sha256": "99f83b15cea9a4fb8945516c276b5f42b11608f82104fc6fa98a541cac826de7",
+  "model_sha256": "061b54daade076b5d3362dac252678d17da8c68f07560be70818cace6590cb1a",
+  "executable_sha256": "83a4d763c03e453f13d2f702442bfdd99fb53a9cb2b14a244d4881f52e33cea1",
+  "command": [
+    "/workspace/scratch/1e12a4453378/rubrictrace-runtime/llama-b11718/llama-server",
+    "-m",
+    "/workspace/scratch/1e12a4453378/rubrictrace-runtime/model.gguf",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "18082",
+    "-c",
+    "4096",
+    "-np",
+    "1",
+    "-t",
+    "4",
+    "-ngl",
+    "0",
+    "--no-webui"
+  ],
+  "fixture": "Authored fictional short answers; not a classroom benchmark",
+  "review": "SCRIPTED fixture decisions; not an actual teacher review",
+  "paid_api_calls": 0,
+  "calls": 2,
+  "usage": {
+    "prompt_tokens": 964,
+    "completion_tokens": 216
+  },
+  "suggested": 1,
+  "blocked": 0,
+  "error": "Strong-answer suggestions did not satisfy authored fixture gate"
+}

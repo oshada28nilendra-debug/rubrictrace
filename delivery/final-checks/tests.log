@@ -1,0 +1,52 @@
+test_bad_model_fields (tests.test_core_review.CoreTests.test_bad_model_fields) ... ok
+test_blank_answer (tests.test_core_review.CoreTests.test_blank_answer) ... ok
+test_duplicate_ids (tests.test_core_review.CoreTests.test_duplicate_ids) ... ok
+test_duplicate_suggestions (tests.test_core_review.CoreTests.test_duplicate_suggestions) ... ok
+test_invented_quote (tests.test_core_review.CoreTests.test_invented_quote) ... ok
+test_manual_is_not_ai (tests.test_core_review.CoreTests.test_manual_is_not_ai) ... ok
+test_missing_model_rows (tests.test_core_review.CoreTests.test_missing_model_rows) ... ok
+test_points (tests.test_core_review.CoreTests.test_points) ... ok
+test_rubric_range (tests.test_core_review.CoreTests.test_rubric_range) ... ok
+test_schema_and_bounds (tests.test_core_review.CoreTests.test_schema_and_bounds) ... ok
+test_tampered_pack (tests.test_core_review.CoreTests.test_tampered_pack) ... ok
+test_unicode_offsets (tests.test_core_review.CoreTests.test_unicode_offsets) ... ok
+test_unsafe_ids (tests.test_core_review.CoreTests.test_unsafe_ids) ... ok
+test_valid (tests.test_core_review.CoreTests.test_valid) ... ok
+test_quote_heavy_pack_stays_readable (tests.test_core_review.LimitTests.test_quote_heavy_pack_stays_readable) ... ok
+test_accept_no_silent_edit (tests.test_core_review.ReviewTests.test_accept_no_silent_edit) ... ok
+test_confirmation_alias_complete (tests.test_core_review.ReviewTests.test_confirmation_alias_complete) ... ok
+test_duplicate_decisions (tests.test_core_review.ReviewTests.test_duplicate_decisions) ... ok
+test_exports_and_overwrite (tests.test_core_review.ReviewTests.test_exports_and_overwrite) ... ok
+test_html_inert (tests.test_core_review.ReviewTests.test_html_inert) ... ok
+test_manual_override (tests.test_core_review.ReviewTests.test_manual_override) ... ok
+test_override_note_and_level (tests.test_core_review.ReviewTests.test_override_note_and_level) ... ok
+test_pending (tests.test_core_review.ReviewTests.test_pending) ... ok
+test_score_and_override (tests.test_core_review.ReviewTests.test_score_and_override) ... ok
+test_stale_digest (tests.test_core_review.ReviewTests.test_stale_digest) ... ok
+test_withhold_no_partial_grade (tests.test_core_review.ReviewTests.test_withhold_no_partial_grade) ... ok
+test_end_to_end_stale_input (tests.test_io_provider.CLITests.test_end_to_end_stale_input) ... ok
+test_fixture_label_overwrite (tests.test_io_provider.CLITests.test_fixture_label_overwrite) ... ok
+test_json_duplicates_and_size (tests.test_io_provider.CLITests.test_json_duplicates_and_size) ... ok
+test_symlink_and_fifo (tests.test_io_provider.CLITests.test_symlink_and_fifo) ... ok
+test_auth_environment (tests.test_io_provider.ProviderTests.test_auth_environment) ... ok
+test_context_and_config (tests.test_io_provider.ProviderTests.test_context_and_config) ... ok
+test_error_body_and_redirect (tests.test_io_provider.ProviderTests.test_error_body_and_redirect) ... ok
+test_header_injection (tests.test_io_provider.ProviderTests.test_header_injection) ... ok
+test_http_contract_budget (tests.test_io_provider.ProviderTests.test_http_contract_budget) ... ok
+test_malformed (tests.test_io_provider.ProviderTests.test_malformed) ... ok
+test_partial_failure_retains_all_rows (tests.test_io_provider.ProviderTests.test_partial_failure_retains_all_rows) ... ok
+test_remote_consent (tests.test_io_provider.ProviderTests.test_remote_consent) ... ok
+test_response_limit (tests.test_io_provider.ProviderTests.test_response_limit) ... ok
+test_unavailable (tests.test_io_provider.ProviderTests.test_unavailable) ... ok
+test_fixture_rejected_before_output_and_no_traceback (tests.test_json_regressions.JSONRegressions.test_fixture_rejected_before_output_and_no_traceback) ... ok
+test_nonfinite_and_surrogate_rejected_everywhere (tests.test_json_regressions.JSONRegressions.test_nonfinite_and_surrogate_rejected_everywhere) ... ok
+test_simulated_live_response_becomes_blocked_rows (tests.test_json_regressions.JSONRegressions.test_simulated_live_response_becomes_blocked_rows) ... ok
+test_slow_drip_respects_absolute_deadline (tests.test_network_bounds.NetworkBounds.test_slow_drip_respects_absolute_deadline) ... ok
+test_model_selects_actual_answer_passage (tests.test_passages.PassageTests.test_model_selects_actual_answer_passage) ... ok
+test_unicode_repeated_and_punctuation_only (tests.test_passages.PassageTests.test_unicode_repeated_and_punctuation_only) ... ok
+test_unknown_evidence_abstains (tests.test_passages.PassageTests.test_unknown_evidence_abstains) ... ok
+
+----------------------------------------------------------------------
+Ran 47 tests in 2.258s
+
+OK

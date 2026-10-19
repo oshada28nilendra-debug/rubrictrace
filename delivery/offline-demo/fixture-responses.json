@@ -1,0 +1,34 @@
+{
+  "S001": {
+    "items": [
+      {
+        "criterion_id": "cause",
+        "level": "clear",
+        "quote": "A lost acknowledgement can trigger a retry and deliver the same message again. Store processed message IDs to ignore repeats.",
+        "reason": "DELIBERATELY GENEROUS SCRIPTED FIXTURE. Teacher review may disagree."
+      },
+      {
+        "criterion_id": "mitigation",
+        "level": "clear",
+        "quote": "A lost acknowledgement can trigger a retry and deliver the same message again. Store processed message IDs to ignore repeats.",
+        "reason": "DELIBERATELY GENEROUS SCRIPTED FIXTURE. Teacher review may disagree."
+      }
+    ]
+  },
+  "S002": {
+    "items": [
+      {
+        "criterion_id": "cause",
+        "level": "clear",
+        "quote": "The queue may retry. Use a faster computer.",
+        "reason": "DELIBERATELY GENEROUS SCRIPTED FIXTURE. Teacher review may disagree."
+      },
+      {
+        "criterion_id": "mitigation",
+        "level": "clear",
+        "quote": "The queue may retry. Use a faster computer.",
+        "reason": "DELIBERATELY GENEROUS SCRIPTED FIXTURE. Teacher review may disagree."
+      }
+    ]
+  }
+}

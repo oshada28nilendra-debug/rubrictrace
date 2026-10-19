@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "title": "Fictional formative systems exercise",
+  "prompt": "Explain why a queue consumer should handle duplicate delivery and name one mitigation.",
+  "rubric": [
+    {"id": "cause", "description": "Explain the duplicate-delivery cause", "levels": [
+      {"id": "missing", "points": 0, "description": "No relevant cause or an incorrect claim"},
+      {"id": "partial", "points": 1, "description": "Mentions retry without connecting it to acknowledgement"},
+      {"id": "clear", "points": 2, "description": "Connects retry after a lost acknowledgement to duplicate delivery"}
+    ]},
+    {"id": "mitigation", "description": "Name a relevant mitigation", "levels": [
+      {"id": "missing", "points": 0, "description": "No relevant mitigation"},
+      {"id": "clear", "points": 3, "description": "Uses an idempotency key or stored processed message IDs"}
+    ]}
+  ],
+  "submissions": [
+    {"id": "S001", "text": "A lost acknowledgement can trigger a retry and deliver the same message again. Store processed message IDs to ignore repeats."},
+    {"id": "S002", "text": "The queue may retry. Use a faster computer."}
+  ]
+}

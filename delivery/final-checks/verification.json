@@ -1,0 +1,125 @@
+{
+  "status": "passed",
+  "python": "3.12.14",
+  "checks": [
+    {
+      "name": "tests",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "-v"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "lint",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "format",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "compile",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "compileall",
+        "-q",
+        "rubrictrace",
+        "scripts",
+        "tests"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "wheel",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "build",
+        "--wheel"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "install",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--no-deps",
+        "--target",
+        "/tmp/rubrictrace-installed-lt2676e7/installed",
+        "/workspace/scratch/1e12a4453378/rubrictrace/dist/rubrictrace-0.1.0-py3-none-any.whl"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "installed-help",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "rubrictrace",
+        "--help"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "installed-prepare",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "rubrictrace",
+        "prepare",
+        "/workspace/scratch/1e12a4453378/rubrictrace/fixtures/assessment.json",
+        "--fixture",
+        "/workspace/scratch/1e12a4453378/rubrictrace/delivery/offline-demo/fixture-responses.json",
+        "--out",
+        "/tmp/rubrictrace-installed-lt2676e7/pack"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "installed-export",
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "rubrictrace",
+        "export",
+        "--assessment",
+        "/workspace/scratch/1e12a4453378/rubrictrace/fixtures/assessment.json",
+        "--pack",
+        "/tmp/rubrictrace-installed-lt2676e7/pack/pack.json",
+        "--review",
+        "/tmp/rubrictrace-installed-lt2676e7/review.json",
+        "--out",
+        "/tmp/rubrictrace-installed-lt2676e7/export"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "wheel_sha256": "6a32d99cf7297ecdf14b181e4a25d7dc346b8de061ac683b4e60eb0e1f806632",
+  "installed_scores": [
+    5,
+    1
+  ],
+  "mode": "offline and simulated integration; genuine inference recorded separately"
+}

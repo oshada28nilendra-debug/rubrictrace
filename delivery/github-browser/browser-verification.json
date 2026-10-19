@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "browser": "149.0.7827.55",
+  "checks": [
+    "two submissions rendered",
+    "source-first headings",
+    "no active content",
+    "mobile no horizontal overflow",
+    "expected final scores",
+    "no page errors",
+    "no HTTP requests"
+  ],
+  "limitation": "Synthetic rendering check only"
+}
